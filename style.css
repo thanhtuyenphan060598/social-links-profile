@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+    --clr-red: hsl(0, 100%, 74%);
+    --clr-blue: hsl(248, 32%, 49%);
+    --clr-green: hsl(75, 94%, 57%);
+}
+
+body {
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: var(--clr-grey-900);
+    color: var(--clr-white);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 32px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.card-container {
+    width: 327px;
+    height: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--clr-grey-800);
+    border-radius: 12px;
+}
+
+.card-image {
+    max-width: 88px;
+    max-height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.card-content h1 {
+    font-size: 2.4em;
+    line-height: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-content p {
+    font-size: 1.4em;
+    line-height: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: var(--clr-green)
+}
+
+.card-bio {
+    font-size: 1.4em;
+    line-height: 150%;
+    font-weight: normal;
+    text-align: center;
+}
+
+.card-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-links button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--clr-grey-700);
+    color: var(--clr-white);
+    outline: none;
+    border: none;
+    font-size: 1.4em;
+    line-height: 150%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-links button:hover {
+    background-color: var(--clr-green);
+    color: var(--clr-grey-700);
+}
+
+@media (width >=384px) {
+    .card-container {
+        width: 384px;
+    }
+}
