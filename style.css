@@ -92,7 +92,7 @@ img {
     gap: 16px;
 }
 
-.card-links button {
+.card-links a {
     padding: 12px;
     border-radius: 8px;
     background-color: var(--clr-grey-700);
@@ -103,9 +103,11 @@ img {
     line-height: 150%;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
-.card-links button:hover {
+.card-links a:hover {
     background-color: var(--clr-green);
     color: var(--clr-grey-700);
 }
